@@ -1,0 +1,7 @@
+Day 01 , 
+
+.equals() is an inbuilt function used to compare to variable's content(value) not memory address ,
+like student1.branch.equals(student2.branch);
+this function returns either false or true.
+
+== is also the same futured operator but it checks references not content.
