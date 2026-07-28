@@ -1,0 +1,5 @@
+Day 2
+
+Array list is introduced to solve the problem of array size, 
+when we work with static array like Student students[]=new Student[3];
+when we need to add  4rth student to this array, there is no space for this 4th student , the solution for this is where the array list is introduced it is a dynamic array which grows and shrinks automatically, behind the scenes it does the process like creating more space in memory and copying all data of previous array. but this is taken care by java itself no need to worry about space here.
