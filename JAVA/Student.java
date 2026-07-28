@@ -21,19 +21,20 @@ public class Student {
         return this.branch.equals(s4.branch);
     }
     public static void main(String[] abc){
-        Student student[] ={new Student("Ram",1,"cse"),new Student("Pavan",2,"CSC")};
-        
-        for(Student s:student){
+        ArrayList<Student> students= new ArrayList<>();
+        students.add(new Student("Ram",1,"CSE"));
+         students.add(new Student("Pavan",2,"CST"));
+        for(Student s:students){
             s.display();
         }
-        System.out.println("Branch before update: "+student[1].branch);
-        student[1].updatebranch("ECE");
-         System.out.println("Branch after update: "+student[1].branch);
-        if(student[1].isSameBranch(student[0])){
-            System.out.println(student[0].name+" and "+student[1].name+" are Same branch");
+        System.out.println("Branch before update: "+students.get(1).branch);
+        students.get(1).updatebranch("ECE");
+         System.out.println("Branch after update: "+students.get(1).branch);
+        if(students.get(1).isSameBranch(students.get(0))){
+            System.out.println(students.get(0).name+" and "+students.get(1).name+" are Same branch");
         }
         else{
-            System.out.println(student[0].name+" and "+student[1].name+" are not Same branch");
+            System.out.println(students.get(0).name+" and "+students.get(1).name+" are not Same branch");
         }
         }
     }
